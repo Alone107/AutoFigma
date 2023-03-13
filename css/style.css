@@ -733,36 +733,42 @@ body {
 
 .logos-row-text-1 {
 transition: all .3s;
+margin-left: -30px;
 }
 .logos-row-text-2 {
 transition: all .3s;
-
+margin-left: -10px;
 }
 .logos-row-text-3 {
 transition: all .3s;
-
+margin-left: -10px;
 }
 .logos-row-text-4 {
 transition: all .3s;
-
+margin-left: -10px;
 }
-.logos-row-text-5 svg {
+.logos-row-text-5 {
   margin-left: -50px;
 }
 .logos-row-text-6 {
 transition: all .3s;
+margin-left: -30px;
 
 }
 .logos-row-text-7 {
 transition: all .3s;
+margin-left: -10px;
 
 }
 .logos-row-text-8 {
 transition: all .3s;
+margin-left: -10px;
 
 }
 .logos-row-text-9 {
 transition: all .3s;
+margin-left: -10px;
+
 
 }
 .logos-row-text-10 {
