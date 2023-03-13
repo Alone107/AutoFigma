@@ -267,15 +267,14 @@ opacity: 0.7;
 .main {
   font-weight: 600;
 }
+
 .fullservice {
-  padding-bottom: 150px;
-}
-.service__container {
-  position: relative;
+  background: #F2F2F2;
 
 }
+
 .service__block {
-  background: #F2F2F2;
+  padding-bottom: 128px;
 }
 .service__text {
   text-align: center;
@@ -302,9 +301,6 @@ margin-left: 310px;
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
   text-align: center;
-  height: 472px;
-  width: 1288px;
-  margin-left: 120px;
   align-items: center;
 }
 .service__grid-item {
@@ -318,16 +314,14 @@ margin-left: 310px;
   margin-bottom: 8px;
   transition: all .3s;
 }
-/* .service__grid-item svg {
-  fill: #1E1B1B;
-} */
+
 
 .service__grid-item:hover {
   background: #FF6433;
   color: #ffffff;
 }
 
-.service__grid-item:hover svg {
+.service__grid-item:hover svg path {
   stroke: #ffffff;
   fill: #fff;
 }
@@ -343,24 +337,21 @@ margin-left: 310px;
   letter-spacing: -0.03em;
 }
 .service__arrow {
-  margin-left: 1130px;
+  margin-left: 1050px;
   margin-top: 32px;
   display: flex;
-  justify-content: end;
   align-items: center;
-  /* align-self: flex-end; */
   transition: all .3s;
-  max-width: 280px;
+  max-width: 290px;
 }
 .service__arrow-text {
-  margin-left: 1px;
+  margin-left: 2px;
   margin-right: 16px;
   font-size: 18px;
   line-height: 175%;
   color: #1E1B1B;
 }
 .service__arrow-icon-right {
-  margin-right: 10px;
 }
 
 .service__arrow:hover {
@@ -371,7 +362,7 @@ margin-left: 310px;
   color: #fff;
 }
 
-.service__arrow:hover svg {
+.service__arrow:hover svg path {
   fill: #fff;
   stroke: #fff;
 }
