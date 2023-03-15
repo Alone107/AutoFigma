@@ -10,4 +10,32 @@ var mixer = mixitup('.blog__list');
 $('.blog_filter-btn').on('click', function() {
   $('.blog_filter-btn').removeClass('blog_filter-btn--active')
   $(this).addClass('blog_filter-btn--active')
+});
+
+// ------------------------------SLICK--------------------
+
+$('.review__slider').slick({
+  appendDots: $('.review_dots'),
+  arrows: false,
+  slidesToShow: 2,
+  infinite: true,
+  waitForAnimate: false,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+$('.review_arrows-prev').on('click', function(e) {
+  e.preventDefault()
+  $('.review__slider').slick('slickPrev')
+})
+$('.review_arrows-next').on('click', function(e) {
+  e.preventDefault()
+  $('.review__slider').slick('slickNext')
 })
