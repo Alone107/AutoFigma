@@ -49,9 +49,9 @@ $('.quest__acc-link').on('click', function (e) {
     $(this).children('.quest__acc-text').slideUp()
 
   } else {
-    $('.quest__acc-link').RemoveClass('quest__acc-link--active')
+    $('.quest__acc-link').removeClass('quest__acc-link--active')
     $('.quest__acc-text').slideUp()
-    $(this).AddClass('quest__acc-link--active')
+    $(this).addClass('quest__acc-link--active')
     $(this).children('.quest__acc-text').slideDown()
   }
 
