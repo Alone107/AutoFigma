@@ -7,7 +7,7 @@ $(function () {
 
 // ----------------------------Rateyo-----------------------
 var mixer = mixitup('.blog__list');
-$('.blog_filter-btn').on('click', function() {
+$('.blog_filter-btn').on('click', function () {
   $('.blog_filter-btn').removeClass('blog_filter-btn--active')
   $(this).addClass('blog_filter-btn--active')
 });
@@ -29,13 +29,36 @@ $('.review__slider').slick({
       }
     }
   ]
-});
+})
 
-$('.review_arrows-prev').on('click', function(e) {
+
+$('.review_arrows-prev').on('click', function (e) {
   e.preventDefault()
   $('.review__slider').slick('slickPrev')
 })
-$('.review_arrows-next').on('click', function(e) {
+$('.review_arrows-next').on('click', function (e) {
   e.preventDefault()
   $('.review__slider').slick('slickNext')
 })
+
+// --------------------------accordion---------------------
+$('.quest__acc-link').on('click', function (e) {
+  e.preventDefault()
+  if ($(this).hasClass('quest__acc-link--active')) {
+    $(this).removeClass('quest__acc-link--active')
+    $(this).children('.quest__acc-text').slideUp()
+
+  } else {
+    $('.quest__acc-link').RemoveClass('quest__acc-link--active')
+    $('.quest__acc-text').slideUp()
+    $(this).AddClass('quest__acc-link--active')
+    $(this).children('.quest__acc-text').slideDown()
+  }
+
+});
+
+
+
+
+
+
