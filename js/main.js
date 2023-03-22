@@ -55,10 +55,13 @@ $('.quest__acc-link').on('click', function (e) {
     $(this).children('.quest__acc-text').slideDown()
   }
 
+
+  
 });
-
-
-
-
-
+$(".footer__bottom-logo, .footer__nav-link, .header__nav-link ").on("click", function(e) {
+  e.preventDefault()
+  var id  = $(this).attr('href'),
+  top = $(id).offset().top+100
+  $('body,html').animate({ scrollTop: top }, 1500)
+})
 
