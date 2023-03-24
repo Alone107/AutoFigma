@@ -73,7 +73,7 @@ setInterval(() => {
     $(".burger").removeClass('burger--folow')
   }
 }, 0);
-$('.burger,.overlay').on('click', function (e) {
+$('.burger,.overlay,.header__nav-item').on('click', function (e) {
   e.preventDefault()
   $('.header__top').toggleClass('header__top--open')
   $('.overlay').toggleClass('overlay--show')
